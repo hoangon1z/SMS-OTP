@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Roboto', sans-serif;
+  --font-mono: 'Roboto', sans-serif;
+  --animate-spin-slow: spin 14s linear infinite;
+  --animate-fade-in: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-slide-up: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-scale-up: scaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes scaleUp {
+    from { opacity: 0; transform: scale(0.96); }
+    to { opacity: 1; transform: scale(1); }
+  }
+}
+
+body, html, input, button, textarea, select, code, pre, span, div, p, h1, h2, h3, h4, h5, h6, table, th, td {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+@utility custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+}
+
+@utility glow-blue {
+  box-shadow: 0 0 15px 3px rgba(0, 71, 171, 0.12);
+}
+
+@utility glow-green {
+  box-shadow: 0 0 15px 3px rgba(34, 197, 94, 0.18);
+}
+

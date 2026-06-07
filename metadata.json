@@ -1,0 +1,8 @@
+{
+  "name": "SMSVN",
+  "description": "Hệ thống thuê số điện thoại ảo và nhận mã OTP trực tuyến nhanh chóng, bảo mật cấp doanh nghiệp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
